@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 1.8rem;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.heading-primary {
+  font-size: 7rem;
+  color: #2d314d;
+  font-weight: 300;
+  line-height: 1.1;
+}
+.heading-secondary {
+  font-size: 5rem;
+  color: #2d314d;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.heading-tertiary {
+  font-size: 2.7rem;
+  color: #2d314d;
+  font-weight: 400;
+  line-height: 1.1;
+}
+.text-description {
+  font-size: 2rem;
+  color: #9698a6;
+  line-height: 1.8;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+
+.card-title {
+  font-size: 2.3rem;
+}
+.logo {
+  width: 100%;
+}
+
+.attribution {
+  text-align: center;
+  color: #2d314d;
+  font-size: 1.4rem;
+}
+
+.attri:link,
+.attri:visited {
+  color: #2d314d;
+  font-size: 1.4rem;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: #9698a6;
+  display: block;
+  position: relative;
+}
+
+.link:hover,
+.link:active {
+}
+
+.header .link:link:hover,
+.header .link:visited:hover {
+  color: #000;
+}
+
+.header .link:link::before {
+  content: "";
+  width: 100%;
+  height: 20%;
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
+  position: absolute;
+  bottom: -4.5rem;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:link:hover:before {
+  opacity: 1;
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+  text-decoration: none;
+  padding: 2.2rem 4.5rem;
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
+  border-radius: 5rem;
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+  z-index: 99999;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  filter: opacity(0.5);
+}
+
+.grid {
+  display: grid;
+}
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+.grid--2-cols-md {
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.grid--4-cols {
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 1.5fr;
+}
+
+.footer .container:last-child() {
+  gap: 12rem;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.margin-btm-sm {
+  margin-bottom: 2rem;
+}
+
+.margin-btm-md {
+  margin-bottom: 7rem;
+}
+
+.small-width {
+  width: 60%;
+}
